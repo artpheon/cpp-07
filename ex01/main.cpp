@@ -68,7 +68,7 @@ int test1() {
 	for (int i = 0; i < 3; i++) {
 		std::cout << array[i] << std::endl;
 	}
-	iter(array, 3, &charF);
+	iter<char *>(array, 3, &charF);
 	std::cout << "After iteration:" << std::endl;
 	for (int i = 0; i < 3; i++) {
 		std::cout << array[i] << std::endl;
@@ -84,7 +84,7 @@ int test2() {
 		std::cout << array[i] << " - ";
 	}
 	std::cout << std::endl;
-	iter(array, 10, &intF);
+	iter<int>(array, 10, &intF);
 
 	std::cout << "Int array after :";
 	for (int i = 0; i < 10; i++) {
@@ -102,7 +102,7 @@ int test3() {
 	array[0].show();
 	array[1].show();
 	std::cout << "After iteration:" << std::endl;
-	iter(array, 2, &classT);
+	iter<Test>(array, 2, &classT);
 	array[0].show();
 	array[1].show();
 	return 0;
