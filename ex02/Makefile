@@ -1,9 +1,9 @@
-NAME	= ex00
+NAME	= ex02
 SRC		= main.cpp
 OBS		= $(SRC:.cpp=.o)
 FLAGS	= -Wall -Wextra -Werror
-INC		= -I.
-HED		= iter.hpp
+INC		= -I.Array.hpp
+HED		= Array.hpp
 CC		= clang++
 %.o:	%.cpp
 	$(CC) $(INC) $(FLAGS) -c $< -o $(<:.cpp=.o)
