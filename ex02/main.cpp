@@ -56,24 +56,7 @@ int main0()
 
 int main1()
 {
-	Array<int>		aiempty;
-	Array<float>		af;
-	Array<char*>		ac;
-	Array<std::string>	as;
-	std::cout << "-----------" << std::endl;
-	Array<int>		ai(20);
-	try
-	{
-		for (int i = 0; i < 20; i++)
-			ai[i] = i;
-		for (int i = 0; i < 20; i++)
-			std::cout << ai[i] << " "; 
-		std::cout << std::endl;
-	}
-	catch(std::exception & e)
-	{
-		std::cout << e.what() << std::endl;
-	}
+	
     main0();
     Array<int>  arr;
     std::cout << "array size: " << arr.size() << std::endl;
@@ -91,5 +74,10 @@ int main1()
 
 int main() {
     main1();
-    while (1) ;
+    Array <int>arr;
+    try {
+        std::cout << "Getting element at index 0 from empty array..." << std::endl;
+        std::cout << arr[0] << std::endl;
+    }
+    catch(std::exception &e) { std::cout << e.what() << std::endl; }
 }
