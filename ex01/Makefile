@@ -1,4 +1,4 @@
-NAME	= ex00
+NAME	= ex01
 SRC		= main.cpp
 OBS		= $(SRC:.cpp=.o)
 FLAGS	= -Wall -Wextra -Werror

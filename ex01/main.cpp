@@ -105,6 +105,7 @@ int test3() {
 	iter<Test>(array, 2, &classT);
 	array[0].show();
 	array[1].show();
+	delete [] array;
 	return 0;
 }
 
